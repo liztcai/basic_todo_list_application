@@ -7,7 +7,7 @@ Note:
 - frontend only
 
 System Requirements: 
-2. Python 3.4+
+1. Python 3.4+
 2. Django 3+ 
 
 Instructions:
