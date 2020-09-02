@@ -3,8 +3,7 @@ This is a basic To Do List web application created with Python, Django, and Tail
 API reference: https://my-json-server.typicode.com/wsh-startup/mock-api (static endpoints). 
 
 Note:
-- static endpoints
-- frontend only
+- static endpoints 
 
 System Requirements: 
 1. Python 3.4+
