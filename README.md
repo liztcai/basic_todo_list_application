@@ -5,15 +5,18 @@ API reference: https://my-json-server.typicode.com/wsh-startup/mock-api (static 
 Note:
 - static endpoints 
 
+
 System Requirements: 
 1. Python 3.4+
 2. Django 3+ 
+
 
 Instructions:
 1. Clone or download this repository into your local directiory
 2. Go to the directory where this repository is located
 3. Run in your terminal: cd basic_todo_list_application
 4. Run in your terminal: python manage.py runserver
+
 
 The following features are successfully implemented when triggered and logged in the file - app.log
 The date and time it was triggered, response status_code, and info message when a feature is triggered is also listed in the app.log 
