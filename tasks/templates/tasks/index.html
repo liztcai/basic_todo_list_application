@@ -1,0 +1,54 @@
+<ul class="mdc-list">
+    {% for task in tasks %}
+        {% if task.completed == True %}
+            <li class="mdc-list-item" tabindex="0">
+                <div class="flex">
+                    <div class="border-b pb-2 pt-2 w-2/3">
+                        <a href="{% url 'show' task.id %}">
+                            <span class="mdc-list-item__text"><s>{{task.id}} {{task.title}}</s></span>
+                        </a>
+                    </div>
+                    <div class="border-b pb-2 bg-red-400 mt-2 border mdc-touch-target-wrapper mr-3 pl-2 pr-2 rounded text-white" style="height: 27px;">
+                        <a class="mdc-button mdc-button--touch" href="{% url 'delete' task.id %}" >
+                            <div class="mdc-button__ripple"></div>
+                            <span class="mdc-button__label">Delete</span>
+                            <div class="mdc-button__touch"></div>
+                        </a>
+                    </div>
+                    <div class="border-b pb-2 bg-teal-400 mt-2 border mdc-touch-target-wrapper mr-3 pl-2 pr-2 rounded text-white" style="height: 27px;">
+                        <a class="mdc-button mdc-button--touch" href="{% url 'update' task.id %}" >
+                            <div class="mdc-button__ripple"></div>
+                            <span class="mdc-button__label">Update</span>
+                            <div class="mdc-button__touch"></div>
+                        </a>
+                    </div>
+                </div>
+            </li>
+        {% else %}
+            <li class="mdc-list-item" tabindex="0">
+                <div class="flex">
+                    <div class="border-b pb-2 pt-2 w-2/3">
+                        <a href=" {% url 'show' task.id %}">
+                            <span class="mdc-list-item__ripple"></span>
+                            <span class="mdc-list-item__text">{{task.id}} {{task.title}}</span>
+                        </a>
+                    </div>
+                    <div class="border-b pb-2 bg-red-400 mt-2 border mdc-touch-target-wrapper mr-3 pl-2 pr-2 rounded text-white" style="height: 27px;">
+                        <a class="mdc-button mdc-button--touch" href="{% url 'delete' task.id %}" >
+                            <div class="mdc-button__ripple"></div>
+                            <span class="mdc-button__label">Delete</span>
+                            <div class="mdc-button__touch"></div>
+                        </a>
+                    </div>
+                    <div class="border-b pb-2 bg-teal-400 mt-2 border mdc-touch-target-wrapper mr-3 pl-2 pr-2 rounded text-white" style="height: 27px;">
+                        <a class="mdc-button mdc-button--touch" href="{% url 'update' task.id %}" >
+                            <div class="mdc-button__ripple"></div>
+                            <span class="mdc-button__label">Update</span>
+                            <div class="mdc-button__touch"></div>
+                        </a>
+                    </div>
+                </div>
+            </li>
+        {% endif %}
+    {% endfor %}
+</ul>

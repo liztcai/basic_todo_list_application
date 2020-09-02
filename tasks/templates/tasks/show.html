@@ -1,0 +1,15 @@
+{% extends 'tasks/main.html' %}
+
+{% block content %}
+    <div class="mdc-card">
+        <h3 class="mdc-typography--headline6">
+            {{task.title}}
+        </h3>
+        <p>Date modified/modified: {{task.date}}</p>
+        {% if task.completed == True %}
+            <p>Status: done</p>
+        {% else %}
+            <p>Status: pending</p>
+        {% endif %}
+    </div>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'tasks/main.html' %}
+
+{% block content %}
+    <form method="POST" action="{% url 'put' %}">
+        <div class="mdc-card">
+            {% csrf_token %}
+            <input type="hidden" name="id" value="{{ task.id }}">
+            <input class="mdc-typography--headline6" name="updated_task" value="{{ task.title }}">
+            <p>Date created/modified: {{task.date}}</p>
+
+            {% if task.completed == True %}
+                <p>Status: done</p>
+                <input type="checkbox" name="completed" value="" checked>
+            {% else %}
+                <p>Status: pending </p>
+                <input type="checkbox" name="completed" value="">&nbsp; Completed<br><br>
+            {% endif %}
+
+            <input type="submit" name="Update Task">
+        </div>
+    </form>
+{% endblock %}

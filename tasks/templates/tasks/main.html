@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Basic Todo List Application</title>
+    <style>
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    </style>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="mdc-typography">
+    <div class="container" style="margin: 30px auto;">
+        <h1 class="font-extrabold mb-10 text-3xl">TO DO</h1>
+
+        {% include 'tasks/response.html' %}
+
+        {% if task|length == 0 %}
+            {% include 'tasks/create.html' %}
+        {% endif %}
+
+        {% block content %}
+        {% endblock %}
+
+        {% include 'tasks/index.html' %}
+
+    </div>
+</body>
+</html>

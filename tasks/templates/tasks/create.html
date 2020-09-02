@@ -1,0 +1,9 @@
+<form method="POST" action="{% url 'store' %}" class="mb-10">
+  {% csrf_token %}
+
+  <label class="mdc-text-field mdc-text-field--outlined">
+    <input type="text" class="border p-1 pl-5 pr-5 rounded w-1/2" aria-labelledby="my-label-id" name="new_task" placeholder="Enter new task">
+  </label>
+
+  <button type="submit" name="button" class="bg-teal-400 p-1 pl-5 pr-5 rounded">Add</button>
+</form>
