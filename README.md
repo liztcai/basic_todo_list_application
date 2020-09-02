@@ -18,7 +18,7 @@ Instructions:
 The following features are successfully implemented when triggered and logged in the file - app.log
 The date and time it was triggered, response status_code, and info message when a feature is triggered is also listed in the app.log 
 
-How to user or test:
+How to use or test:
 1. List down all of the tasks in ascending order. 
   to implement this, just input in the browser the url of the Development Server Django gave (e.g. http://127.0.0.1:8000/)
   
