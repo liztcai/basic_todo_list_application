@@ -23,16 +23,16 @@ The date and time it was triggered, response status_code, and info message when 
 
 How to use or test:
 1. List down all of the tasks in ascending order.
-  ->To implement this, just input in the browser the url of the Development Server Django gave (e.g. http://127.0.0.1:8000/)
+  -> visit http://127.0.0.1:8000/ to view all task (GET)
   
 2. View a specific task given the id. 
   ->To implement this, just click the task that you want to browse the details of. The app will redirect to the page where the details for this task is being shown
   
 3. Create a new task to be added to the list 
-  ->Tto implement this, just input the task you want to input inside the form with the placeholder "Enter new task", then click the "Add" button
+  ->To add task, enter a task on the input field ("Enter a task") above, then click "Add" button or hit enter key (POST)
 
 4. Update a task.
-  ->To implement this, just click the "Update" button on the right-most side of the task line. The app will redirect to the page where the details for this task is being shown and where you can edit the completed status and name of the task.
+  ->To update task, click the "Update" button on the right-most side of the task line. On the updated page, edit details of the task, then click "Submit" (PUT)
   
 5. Delete a task.
-  ->To implement this, just click the "Delete" button on the right-most side of the task line. 
+  ->To delete task, click on "Delete" button on the right-most side of the task line. (DELETE)
