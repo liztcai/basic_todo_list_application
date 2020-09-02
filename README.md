@@ -6,8 +6,7 @@ Note:
 - static endpoints
 - frontend only
 
-System Requirements:
-1. Node.js and Npm
+System Requirements: 
 2. Python 3.4+
 2. Django 3+ 
 
